@@ -20,11 +20,13 @@ class MusicTheory extends flixel.FlxState {
 	public static var curBeat:Int = 1;
 	public static var curMeasure:Int = 1;
 
+	private var stepsToDo:Int = 0;
+
 	// bpm stuff
 	public static function getBPMFromSeconds(time:Float) {
 		var lastChange:BPMChange = {
 			stepTime: 0,
-			songTime: 0,
+			songPos: 0,
 			bpm: bpm,
 			stepCrochet: stepCrochet
 		}

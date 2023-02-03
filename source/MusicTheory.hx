@@ -69,10 +69,10 @@ class MusicTheory extends flixel.FlxState {
 	private function updateMeasure():Void {
 		if(stepsToDo < 1) stepsToDo = Math.round(getBeatsOnSection() * 4);
 		while(curStep >= stepsToDo) {
-			curSection++;
+			curMeasure++;
 			var beats:Float = getBeatsOnSection();
 			stepsToDo += Math.round(beats * 4);
-			sectionHit();
+			measureHit();
 		}
 	}
 

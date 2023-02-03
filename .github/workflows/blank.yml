@@ -28,8 +28,7 @@ jobs:
           haxelib setup C:/haxelib
           haxe -cp ./update -D analyzer-optimize -main Update --interp
           haxelib install hxcpp
-          haxelib install hmm
-          haxelib run hmm install
+          haxelib install flixel
       - name: Building the game
         run: |
           haxelib run lime build windows

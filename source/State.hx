@@ -12,7 +12,7 @@ class State extends flixel.FlxState {
 	override public function create() {
 		super.create();
 
-		text = new FlxText(50, 0, 0, 'ok fjgodhfdghji', 75)
+		text = new FlxText(50, 0, 0, 'ok fjgodhfdghji', 75);
 		add(text);
 
 		cam = new FlxCamera();

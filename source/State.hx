@@ -5,7 +5,7 @@ import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.text.FlxText;
 
-class State extends flixel.FlxState {
+class State extends MusicTheory extends flixel.FlxState {
 	var cam:FlxCamera;
 	var txt:FlxText;
 

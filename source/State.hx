@@ -11,7 +11,7 @@ class State extends flixel.FlxState {
 		super.create();
 
 		cam = new FlxCamera();
-		FlxG.cameras.reset(camGame);
-		FlxG.cameras.setDefaultDrawTarget(camGame, true);
+		FlxG.cameras.reset(cam);
+		FlxG.cameras.setDefaultDrawTarget(cam, true);
 	}
 }

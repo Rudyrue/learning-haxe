@@ -5,11 +5,11 @@ import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.text.FlxText;
 
-class State extends MusicTheory extends flixel.FlxState {
+class State extends MusicTheory {
 	var cam:FlxCamera;
 	var txt:FlxText;
 
-	override public function create() {
+	public function create() {
 		super.create();
 
 		txt = new FlxText(50, 0, 0, 'ok fjgodhfdghji', 75);

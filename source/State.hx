@@ -4,10 +4,13 @@ import flixel.FlxSprite;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.text.FlxText;
+import flixel.system.FlxSound
 
 class State extends MusicTheory {
 	var cam:FlxCamera;
 	var txt:FlxText;
+
+	var g:FlxSound;
 
 	override public function create() {
 		super.create();
@@ -18,5 +21,11 @@ class State extends MusicTheory {
 		cam = new FlxCamera();
 		FlxG.cameras.reset(cam);
 		FlxG.cameras.setDefaultDrawTarget(cam, true);
+
+		g = new FlxSound().loadEmbedded('assets/g.wav');
+	}
+
+	override public function beatHit() {
+		g.play();
 	}
 }

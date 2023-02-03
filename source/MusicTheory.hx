@@ -22,6 +22,20 @@ class MusicTheory extends flixel.FlxState {
 
 	private var stepsToDo:Int = 0;
 
+	override function update(elapsed:Float) {
+		var oldStep:Int = curStep;
+
+		updateCurStep();
+		updateBeat();
+
+		if (oldStep != curStep) {
+			if(curStep > 0) stepHit();
+			if (oldStep < curStep) updateSection();
+		}
+
+		super.update(elapsed);
+	}
+
 	// bpm stuff
 	public static function getBPMFromSeconds(time:Float) {
 		var lastChange:BPMChange = {

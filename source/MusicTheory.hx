@@ -1,6 +1,6 @@
 package;
 
-class MusicTheory {
+class MusicTheory extends flixel.FlxState {
 	public static var bpm:Float = 120;
 	public static var measure:Int = (bpm / 4);
 	public static var crochet:Float = ((60 / bpm) * 1000);

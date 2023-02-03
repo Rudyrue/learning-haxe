@@ -9,7 +9,7 @@ class State extends MusicTheory {
 	var cam:FlxCamera;
 	var txt:FlxText;
 
-	public function create() {
+	override public function create() {
 		super.create();
 
 		txt = new FlxText(50, 0, 0, 'ok fjgodhfdghji', 75);

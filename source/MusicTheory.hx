@@ -30,7 +30,7 @@ class MusicTheory extends flixel.FlxState {
 
 		if (oldStep != curStep) {
 			if(curStep > 0) stepHit();
-			if (oldStep < curStep) updateSection();
+			if (oldStep < curStep) updateMeasure();
 		}
 
 		super.update(elapsed);

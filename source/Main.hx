@@ -54,15 +54,12 @@ class Main extends Sprite
 
 		setupGame();
 	}
-
-	var video:Video;
-	var netStream:NetStream;
+	
 	private var overlay:Sprite;
 
 	public static var fpsCounter:FPS;
 
-	private function setupGame():Void
-	{
+	private function setupGame():Void {
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
 
@@ -74,10 +71,6 @@ class Main extends Sprite
 			gameWidth = Math.ceil(stageWidth / zoom);
 			gameHeight = Math.ceil(stageHeight / zoom);
 		}
-
-		#if !debug
-		initialState = TitleState;
-		#end
 
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate, skipSplash, startFullscreen));
 

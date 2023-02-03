@@ -2,6 +2,7 @@ package;
 
 import flixel.FlxSprite;
 import flixel.FlxCamera;
+import flixel.FlxG;
 
 class State extends flixel.FlxState {
 	var cam:FlxCamera;

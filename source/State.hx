@@ -4,7 +4,7 @@ import flixel.FlxSprite;
 import flixel.FlxCamera;
 
 class State extends flixel.FlxState {
-	var camera:FlxCamera;
+	var cam:FlxCamera;
 
 	public function create() {
 		super.create();

@@ -26,6 +26,7 @@ class State extends MusicTheory {
 	}
 
 	override public function beatHit() {
+		super.beatHit();
 		g.play();
 	}
 }

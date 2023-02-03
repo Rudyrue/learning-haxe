@@ -21,12 +21,9 @@ class State extends MusicTheory {
 		cam = new FlxCamera();
 		FlxG.cameras.reset(cam);
 		FlxG.cameras.setDefaultDrawTarget(cam, true);
-
-		g = new FlxSound().loadEmbedded('assets/g.wav');
 	}
 
 	override public function beatHit() {
 		super.beatHit();
-		g.play();
 	}
 }

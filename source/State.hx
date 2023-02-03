@@ -6,7 +6,7 @@ import flixel.FlxCamera;
 class State extends flixel.FlxState {
 	var cam:FlxCamera;
 
-	public function create() {
+	override public function create() {
 		super.create();
 
 		// camera = new FlxCamera();

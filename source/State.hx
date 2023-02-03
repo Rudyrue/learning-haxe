@@ -9,6 +9,8 @@ class State extends flixel.FlxState {
 	override public function create() {
 		super.create();
 
-		// camera = new FlxCamera();
+		cam = new FlxCamera();
+		FlxG.cameras.reset(camGame);
+		FlxG.cameras.setDefaultDrawTarget(camGame, true);
 	}
 }

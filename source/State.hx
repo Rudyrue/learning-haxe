@@ -18,10 +18,7 @@ class State extends flixel.FlxState {
 		cam = new FlxCamera();
 		FlxG.cameras.reset(cam);
 		FlxG.cameras.setDefaultDrawTarget(cam, true);
-	}
 
-	override public function update(elapsed:Float) {
-		super.update(elapsed);
 		for (var i:Int = 0; i < 3; i++) trace('okokookkokokoko');
 	}
 }

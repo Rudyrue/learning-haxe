@@ -18,7 +18,5 @@ class State extends flixel.FlxState {
 		cam = new FlxCamera();
 		FlxG.cameras.reset(cam);
 		FlxG.cameras.setDefaultDrawTarget(cam, true);
-
-		for (var i:Int = 0; i < 3; i++) trace('okokookkokokoko');
 	}
 }
